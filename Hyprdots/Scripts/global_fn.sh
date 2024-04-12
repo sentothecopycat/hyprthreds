@@ -70,18 +70,18 @@ aur_available()
     fi
 }
 
-nvidia_detect()
-{
-    dGPU=$(lspci -k | grep -A 0 -E "(VGA|3D)" | awk -F 'controller: ' '{print $2}')
-    if [ $(lspci -k | grep -A 2 -E "(VGA|3D)" | grep -i nvidia | wc -l) -gt 0 ]
-    then
+#nvidia_detect()
+#{
+    #dGPU=$(lspci -k | grep -A 0 -E "(VGA|3D)" | awk -F 'controller: ' '{print $2}')
+    #if [ $(lspci -k | grep -A 2 -E "(VGA|3D)" | grep -i nvidia | wc -l) -gt 0 ]
+    #then
         #echo "nvidia card detected..."
-        return 0
-    else
+        #return 0
+    #else
         #echo "nvidia card not detected..."
-        return 1
-    fi
-}
+        #return 1
+    #fi
+#}
 
 prompt_timer()
 {
