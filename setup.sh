@@ -2,4 +2,4 @@
 
 sudo ./pacman.sh
 
-/home/sento/hyprthreds/Hyprdots/Scripts/install.sh
+/home/sento/hyprthreds/hyprdots/Scripts/install.sh
