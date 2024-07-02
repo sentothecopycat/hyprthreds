@@ -97,17 +97,6 @@ EOF
         cat "${cust_pkg}" >> "${scrDir}/install_pkg.lst"
     fi
 
-    #--------------------------------#
-    # add nvidia drivers to the list #
-    #--------------------------------#
-    #if nvidia_detect; then
-        #cat /usr/lib/modules/*/pkgbase | while read krnl; do
-            #echo "${krnl}-headers" >> "${scrDir}/install_pkg.lst"
-        #done
-        #nvidia_detect --drivers >> "${scrDir}/install_pkg.lst"
-    #fi
-
-    #nvidia_detect --verbose
 
     #----------------#
     # get user prefs #
